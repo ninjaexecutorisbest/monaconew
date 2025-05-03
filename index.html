@@ -85,7 +85,7 @@
         }
 
         .tab.selected {
-            background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(14, 14, 14));
+            background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(40, 40, 40));
         }
 
         .tab span {
@@ -205,7 +205,7 @@
         function createTab() {
             var tab = document.createElement("div");
             tab.classList.add("tab");
-            tab.innerHTML = `<img src="http://www.rozek.de/Lua/Lua-Logo_32x32.png" alt="Tab Icon"><span>Untitled ${tabCount}</span><button class="close-btn">x</button>`;
+            tab.innerHTML = <img src="https://www.lua.org/images/Lua-Logo_32x32.png" alt="Lua Logo"> alt="Tab Icon"><span>Untitled ${tabCount}</span><button class="close-btn">x</button>`;
             tab.dataset.index = tabCount;
             document.getElementById("tabs-container").insertBefore(tab, document.getElementById("new-tab-btn"));
             tabs.push(tab);
